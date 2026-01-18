@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Brewtiful_Cafe">
         <activity
+            android:name=".register_screen"
+            android:exported="false" />
+        <activity
             android:name=".start_screen"
             android:exported="true">
             <intent-filter>
