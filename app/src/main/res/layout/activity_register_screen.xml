@@ -51,7 +51,88 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/MyRoundedInput"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka_one"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="top|center"
+                    app:counterMaxLength="20"
+                    app:counterEnabled="true"
+                    app:helperText="required*"
+                    app:helperTextTextColor="#C40C0C"
+                    android:hint="Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nameInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/MyRoundedInput"
+                    android:layout_width="300dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fredoka_one"
+                    app:counterMaxLength="20"
+                    app:counterEnabled="true"
+                    android:layout_height="wrap_content"
+                    app:helperText="required*"
+                    app:helperTextTextColor="#C40C0C"
+                    android:layout_gravity="top|center"
+                    app:endIconMode="password_toggle"
+                    android:hint="Password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/passwordInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="20"
+                        android:inputType="textPassword"/>
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/MyRoundedInput"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka_one"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="top|center"
+                    app:endIconMode="password_toggle"
+                    app:counterMaxLength="20"
+                    app:counterEnabled="true"
+                    app:helperText="required*"
+                    app:helperTextTextColor="#C40C0C"
+                    android:hint="Re-type password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/retypePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="20"
+                        android:inputType="textPassword"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#714C4C"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/fredoka_one"
+                    android:layout_gravity="center"
+                    android:text="REGISTER"
+
+                    android:textColor="#FFCF71"
+                     />
 
 
             </LinearLayout>
